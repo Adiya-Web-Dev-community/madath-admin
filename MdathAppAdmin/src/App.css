@@ -1,0 +1,111 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tox-statusbar__text-container {
+  display: none !important;
+}
+label{
+  font-weight: 500;
+}
+input{
+  border-radius: 3px;
+  outline: blue;
+}
+input:focus{
+  outline: blue;
+}
+#htmlStringToDOM li{
+list-style-type:disc;
+}
+#htmlStringToDOM {
+  text-align: start;
+  }
+
+  @keyframes bubbleUp {
+    0% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .bubble {
+
+    animation: bubbleUp 0.2s ease-out forwards;
+  }
+
+  .grid-cols-13 {
+    grid-template-columns: repeat(13, minmax(0, 1fr));
+}
+
+/* @keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+} */
+
+.animate-marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  animation: marquee 10s linear infinite;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.news-marquee-container {
+  position: relative;
+  /* width: 100%; */
+  overflow: hidden; /* Hide the overflow for the marquee effect */
+  background-color: #f0f0f0; /* Optional: background color */
+}
+
+.marquee {
+  display: flex;
+  animation: marquee linear infinite forwards ; /* Control the speed of the scrolling */
+}
+
+/* Keyframes for the marquee effect */
+@keyframes marquee {
+  0% {
+      left: -100%; /* Start off the right side */
+  }
+  50% {
+    left: 0%; /* Move to the left side */
+  }
+  100% {
+    left: -100%; /* Move to the left side */
+  }
+}
+
+.marquee_reverse {
+  display: flex;
+  animation: marquee_reverse linear infinite forwards ; /* Control the speed of the scrolling */
+}
+
+/* Keyframes for the marquee effect */
+@keyframes marquee_reverse {
+  0% {
+      right: -0%; /* Start off the right side */
+  }
+  50% {
+    right: 100%; /* Move to the left side */
+  }
+  100% {
+    right: -0%; /* Move to the left side */
+  }
+}
