@@ -59,7 +59,6 @@ const adminSchema = new Schema({
   },
   isEmailVerify: { type: Boolean, default: false },
   otpCreatedAt: { type: Date },
-  mapUrl: { type: String, required: true, trim: true, default: "" },
   premiumUserStatus: {
     type: String,
     enum: [
